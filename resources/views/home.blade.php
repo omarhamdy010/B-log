@@ -52,7 +52,9 @@
                                 </tr>
                             @endforeach
                         </tbody>
+
                     </table><!-- table end -->
+                    {{ $blogs->links() }}
                 </div>
             </div>
         </div><!-- card end -->

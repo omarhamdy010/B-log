@@ -24,7 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $blogs = Blog::all();
+        $blogs = Blog::simplePaginate(10);
         return view('home', compact('blogs'));
     }
 }
